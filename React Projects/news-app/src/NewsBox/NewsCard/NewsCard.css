@@ -1,0 +1,131 @@
+.news-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  gap: 3rem;
+}
+
+/* .news-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20%;
+    overflow: hidden;
+  } */
+
+.news-card-image img {
+  width: 20em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.news-details {
+  height: 70%;
+}
+
+.news-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+.news-description {
+  font-size: 1rem;
+  color: #1a1919;
+}
+
+.news-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.news-published {
+  font-size: 1rem;
+  color: #1a1919;
+}
+
+.news-read-more {
+  font-size: 1rem;
+  color: #1a73e8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1075px) {
+  .news-card {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .news-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .news-card-image img {
+    width: 100%;
+    height: 10em;
+  }
+
+  .news-card-content {
+    gap: 1rem;
+  }
+
+  .news-details {
+    height: auto;
+  }
+
+  .news-card-footer {
+    height: auto;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .news-card {
+    padding: 20px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .news-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .news-description {
+    font-size: 0.9rem;
+  }
+
+  .news-published {
+    font-size: 0.9rem;
+  }
+
+  .news-read-more {
+    font-size: 0.9rem;
+  }
+}

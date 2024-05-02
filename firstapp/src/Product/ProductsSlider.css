@@ -1,0 +1,4 @@
+.products-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
